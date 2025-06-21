@@ -14,4 +14,6 @@
 
 3.将语音文件配置到php脚本中，我用的是相对路径，也就是在与php脚本同目录下的子文件夹中，然后在语音目录那里填写子文件夹名就可以了，应该也可以资源分离。
 
+点击文本即可播放对应语音，使用搜索功能搜索到文本后长按台词，可以转到该台词所在的页数。
+
 ![](https://raw.githubusercontent.com/icey9527/VoiceLineMatcher/refs/heads/main/image/2.png)
