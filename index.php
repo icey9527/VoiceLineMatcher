@@ -98,13 +98,19 @@ $totalPages = ceil($total / $perPage);
 // ---------------------- 音频播放 ----------------------
 if (isset($_GET['play'])) {
     $playId = (int)$_GET['play'];
-    $stmt = $db->prepare("SELECT audio FROM $tableName WHERE id = ?");
+    $stmt = $db->prepare("SELECT LOWER(audio) FROM $tableName WHERE id = ?"); // 查询时转换为小写
     $stmt->execute([$playId]);
-    $audioFile = strtolower($stmt->fetchColumn());
-    if ($audioFile && file_exists($baseDir . DIRECTORY_SEPARATOR . $audioFile)) {
-        header('Content-Type: audio/wave');
-        readfile($baseDir . DIRECTORY_SEPARATOR . $audioFile);
-        exit;
+    $audioFileLower = $stmt->fetchColumn();
+    
+    if ($audioFileLower) {
+        $files = scandir($baseDir);
+        foreach ($files as $file) {
+            if (strtolower($file) === $audioFileLower) { // 比较小写形式
+                header('Content-Type: audio/wave');
+                readfile($baseDir . DIRECTORY_SEPARATOR . $file);
+                exit;
+            }
+        }
     }
 }
 ?>
