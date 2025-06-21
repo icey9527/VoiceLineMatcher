@@ -17,3 +17,7 @@
 点击文本即可播放对应语音，使用搜索功能搜索到文本后长按台词，可以转到该台词所在的页数。
 
 ![](https://raw.githubusercontent.com/icey9527/VoiceLineMatcher/refs/heads/main/image/2.png)
+
+可以体验下我的：
+
+http://scn.wbnb.top/
