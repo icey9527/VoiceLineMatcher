@@ -8,12 +8,10 @@
 
 ![](https://raw.githubusercontent.com/icey9527/VoiceLineMatcher/refs/heads/main/image/0.png)
 
-2.导入对照数据
+2.导入对照数据，并将数据库配置到php脚本中
 
 ![](https://raw.githubusercontent.com/icey9527/VoiceLineMatcher/refs/heads/main/image/1.png)
 
-3.将数据库配置到php脚本中
-
-4.将语音文件配置到php脚本中，我用的是相对路径，也就是在与php脚本同目录下的子文件夹中，然后在语音目录那里填写子文件夹名就可以了，应该也可以资源分离。
+3.将语音文件配置到php脚本中，我用的是相对路径，也就是在与php脚本同目录下的子文件夹中，然后在语音目录那里填写子文件夹名就可以了，应该也可以资源分离。
 
 ![](https://raw.githubusercontent.com/icey9527/VoiceLineMatcher/refs/heads/main/image/2.png)
