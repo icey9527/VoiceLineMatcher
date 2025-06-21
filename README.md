@@ -18,4 +18,4 @@
 
 ![](https://raw.githubusercontent.com/icey9527/VoiceLineMatcher/refs/heads/main/image/2.png)
 
-[可以体验下我的](https://scn.wbnb.top)
+[可以体验下我的](http://scn.wbnb.top)
